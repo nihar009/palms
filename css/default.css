@@ -1,0 +1,375 @@
+@font-face {
+    font-family: bottom;
+    src:url(../fonts/dincondensedbold.ttf);
+}
+
+@font-face {
+    font-family: top;
+    src:url(../fonts/chubgothic.ttf);
+}
+
+@font-face {
+    font-family: para;
+    src:url(../fonts/neovixbasic.otf);
+}
+
+@font-face {
+    font-family: lemon;
+    src:url(../fonts/lemonmilk.otf);
+}
+
+
+html,body {
+    width:100%;
+    height: 100%;
+    background-color: #3E1360;
+}
+
+@keyframes color {
+    0%   {background-color:#3E1360; left:0px; top:0px;}
+    100% {background-color:#808285; left:0px; top:0px;}
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    background: #3E1360;
+    opacity: 1;
+    position: absolute;
+    -webkit-animation: color .5s;
+    animation-delay: 12s;
+    -webkit-animation-fill-mode: forwards;
+    
+}
+
+
+.introtext {
+    width: 700px;
+    text-align: center;
+    font-family: top;
+    font-size: 123px;
+    color: white;
+    margin-top: 275px;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    opacity: 0;
+   
+}
+
+#fate {
+    -webkit-animation: fate_fade 2s;
+}
+
+@-webkit-keyframes fate_fade {
+    0% {opacity: 0; }
+    50% {opacity: 1; }
+    100% {opacity: 0; }
+}
+
+#health {
+    -webkit-animation: fate_fade 2s;
+    animation-delay: 2s;
+}
+    
+#money {
+    -webkit-animation: fate_fade 2s;
+    animation-delay: 4s;
+}
+
+#marriage {
+   -webkit-animation: fate_fade 2s;
+    animation-delay: 6s;
+}
+
+#life {
+     -webkit-animation: fate_fade 2s;
+    animation-delay: 8s;
+}
+
+#move1 {
+    width: 400px;
+	height: 100px;
+	position: relative;
+	left: 50%;
+	top: 50%;
+	margin-top: -150px;
+	margin-left: -185px;
+}
+
+.mono {
+    font-family: top;
+    font-size: 123px;
+    color: white;
+    float: left;
+	margin-left: 5px;
+    opacity: 0;
+   
+    
+}
+
+#move2 {
+    width: 650px;
+	height:100px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+    margin-top: -30px;
+	margin-left: -280px;
+    
+}
+
+@-webkit-keyframes p_move {
+    0% {top: 0px; left: 0px; opacity: 0; }
+    50% {top: 0px; left: 0px; opacity: 1; }
+    100% {top: -175px; left: 0x; opacity: 0;}
+   
+}
+
+@-webkit-keyframes r_move {
+    0% {top: 0px; left: 0px; opacity: 0; }
+    50% {top: 0px; left: 0px; opacity: 1; }
+    100% {top: 190px; left: 0x; opacity: 0;}
+   
+}
+
+
+#p {
+    position: relative;
+    -webkit-animation: p_move 4s ease; 
+    animation-delay: 10s;
+
+}
+
+#r {
+    position: relative;
+    -webkit-animation: r_move 4s ease; 
+    animation-delay: 10s;
+}
+
+.container {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 50%
+    margin-left: -625px;
+    -webkit-animation: container_fade 1s;
+    animation-delay: 13s;
+    -webkit-animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+
+#title {
+    font-family: top;
+    color: #3E1360;
+    font-size: 75pt;
+    text-align: center;
+    margin-top: 55px;
+    
+}
+
+#info {
+    width: 1000px;
+    height: 300px;
+    border: solid #808285 1px;
+    position: relative;
+    left: 50%;
+    margin-left: -500px;
+}
+
+
+#date {
+    font-family: lemon;
+    color: white;
+    font-size: 41.97px;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 172px;
+    float: left;
+}
+
+#rectangle {
+    width: 6.858px;
+    height: 45.428px;
+    background: #3E1360;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 25px;
+    float: left;
+}
+
+#time {
+    font-family: lemon;
+    color: white;
+    font-size: 41.97px;
+    margin-top: 30px;
+}
+
+#para1 {
+    font-family: para;
+    font-size: 22.49px;
+    color: black;
+    margin-top: 30px;
+    width: 280px;
+    height: 176px;
+    text-align: right;
+    left: 50%;
+    margin-left: 190px;
+    line-height: 30px;
+    float: left;
+    margin-right: 55px;
+}
+
+#para2 {
+    font-family: para;
+    font-size: 22.49px;
+    color: black;
+    margin-top: 30px;
+    width: 288px;
+    height: 176px;
+    text-align: left;
+    left: 50%;
+    line-height: 30px;
+    float:left;
+}
+
+#place{
+    font-family: lemon;
+    font-size: 41.22px;
+    color: #333132;
+    width: 400px;
+    clear: left;
+    padding-top: 30px;
+    left: 50%;
+    margin-left: 325px;
+}
+
+#cost {
+    font-family: bottom;
+    font-size: 32.98px;
+    color: white;
+    width: 300px;
+    height: 26px;
+    float: left;
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+#address {
+    font-family: bottom;
+    font-size: 26.98px;
+    color: #333132;
+    width: 380px;
+    height: 40px;
+    float: left;
+    margin-top: 34px;
+    margin-left:20px;
+    width: 350px;
+}
+    
+#age {
+    font-family: bottom;
+    font-size: 32.98px;
+    color: white;
+    width: 300px;
+    height: 26px;
+    float: left;
+    margin-top: 30px;
+    margin-left: -10px;
+}
+
+
+
+@-webkit-keyframes container_fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+} 
+
+@-webkit-keyframes rotate {
+    0% { -webkit-transform: rotate(0deg); opacity: 0; } 
+    50% { opacity: 1; }
+    100% { -webkit-transform: rotate(-360deg); opacity: 0; }
+}
+
+@-webkit-keyframes rotate2 {
+    0% { -webkit-transform: rotate(0deg); opacity: 0; } 
+    50% { opacity: 1; }
+    100% { -webkit-transform: rotate(360deg); opacity: 0; }
+}
+
+.rings {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    -webkit-animation-fill-mode: forwards;
+}
+
+#ring11 {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -370px;
+    margin-top: -370px;
+    -webkit-animation: rotate2 15s infinite linear;
+    animation-delay: 14s;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#ring21 {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -455px;
+    margin-top: -455px;
+    -webkit-animation: rotate 13s infinite linear;
+    animation-delay: 15s;
+    z-index: 2;
+    overflow: hidden;
+}
+
+#ring3 {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -548px;
+    margin-top: -548px;
+    -webkit-animation: rotate2 12s infinite linear;
+    animation-delay: 16s;
+    z-index: 3;
+}
+
+#ring4 {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -630px;
+    margin-top: -640px;
+    -webkit-animation: rotate 7s infinite linear;
+    animation-delay: 17s;
+    z-index: 4;
+    
+}
+
+#ring5 {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -710px;
+    margin-top: -710px;
+    -webkit-animation: rotate 10s infinite linear;
+    animation-delay: 18s;
+    z-index: 5;
+
+}
